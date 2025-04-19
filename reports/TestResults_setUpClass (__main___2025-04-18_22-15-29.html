@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2025-04-18 22:15:29</p>
+                <p class='attribute'><strong>Duration: </strong>0 ms</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>setUpClass (__main__</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">TestRegistro)</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 131
+Current browser version is 135.0.7049.96 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF645256CB5+28821]
+	(No symbol) [0x00007FF6451C3840]
+	(No symbol) [0x00007FF64506578A]
+	(No symbol) [0x00007FF6450A74C2]
+	(No symbol) [0x00007FF6450A652B]
+	(No symbol) [0x00007FF6450A0469]
+	(No symbol) [0x00007FF64509BAC9]
+	(No symbol) [0x00007FF6450EA4FA]
+	(No symbol) [0x00007FF6450E9B30]
+	(No symbol) [0x00007FF6450DF0A3]
+	(No symbol) [0x00007FF6450AA778]
+	(No symbol) [0x00007FF6450AB8E1]
+	GetHandleVerifier [0x00007FF64558FCAD+3408013]
+	GetHandleVerifier [0x00007FF6455A741F+3504127]
+	GetHandleVerifier [0x00007FF64559B5FD+3455453]
+	GetHandleVerifier [0x00007FF64531BDBB+835995]
+	(No symbol) [0x00007FF6451CEB5F]
+	(No symbol) [0x00007FF6451CA814]
+	(No symbol) [0x00007FF6451CA9AD]
+	(No symbol) [0x00007FF6451BA199]
+	BaseThreadInitThunk [0x00007FFC8F63E8D7+23]
+	RtlUserThreadStart [0x00007FFC905514FC+44]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Joharlyn\OneDrive\Documentos\ITLA\Sexto cuatrimestre\Programación III\Proyecto final\TaskFlow Pro pruebas automatizadas\test_createTask.py", line 17, in setUpClass
+    cls.driver = webdriver.Chrome(service=service)
+                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Joharlyn\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\chrome\webdriver.py", line 45, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.CHROME["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Joharlyn\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\chromium\webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Joharlyn\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Joharlyn\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Joharlyn\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Joharlyn\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 131
+Current browser version is 135.0.7049.96 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF645256CB5+28821]
+	(No symbol) [0x00007FF6451C3840]
+	(No symbol) [0x00007FF64506578A]
+	(No symbol) [0x00007FF6450A74C2]
+	(No symbol) [0x00007FF6450A652B]
+	(No symbol) [0x00007FF6450A0469]
+	(No symbol) [0x00007FF64509BAC9]
+	(No symbol) [0x00007FF6450EA4FA]
+	(No symbol) [0x00007FF6450E9B30]
+	(No symbol) [0x00007FF6450DF0A3]
+	(No symbol) [0x00007FF6450AA778]
+	(No symbol) [0x00007FF6450AB8E1]
+	GetHandleVerifier [0x00007FF64558FCAD+3408013]
+	GetHandleVerifier [0x00007FF6455A741F+3504127]
+	GetHandleVerifier [0x00007FF64559B5FD+3455453]
+	GetHandleVerifier [0x00007FF64531BDBB+835995]
+	(No symbol) [0x00007FF6451CEB5F]
+	(No symbol) [0x00007FF6451CA814]
+	(No symbol) [0x00007FF6451CA9AD]
+	(No symbol) [0x00007FF6451BA199]
+	BaseThreadInitThunk [0x00007FFC8F63E8D7+23]
+	RtlUserThreadStart [0x00007FFC905514FC+44]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 0 ms
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
